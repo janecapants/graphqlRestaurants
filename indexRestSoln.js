@@ -21,6 +21,7 @@ var restaurants =  [
     },
     {
       "name": "Fiorellas",
+      "id": 2,
       "description": "Italian-American home cooked food with fresh pasta and sauces",
       "dishes": [
         {
@@ -39,6 +40,7 @@ var restaurants =  [
     },
     {
       "name": "Karma",
+      "id":3,
       "description": "Malaysian-Chinese-Japanese fusion, with great bar and bartenders",
       "dishes": [
         {
@@ -74,6 +76,8 @@ type Dish{
 input restaurantInput{
   name: String
   description: String
+  dishes: String
+  price: Int
 }
 type DeleteResponse{
   ok: Boolean!
